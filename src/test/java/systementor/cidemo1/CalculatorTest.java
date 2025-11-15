@@ -1,11 +1,11 @@
 package systementor.cidemo1;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.logging.Logger;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class CalculatorTest {
 
@@ -15,8 +15,6 @@ class CalculatorTest {
 
     private final int a = 1;
     private final int b = 2;
-
-
 
     private final int devideA = 4;
     private final int devideB = 2;
@@ -28,14 +26,12 @@ class CalculatorTest {
     }
 
 
-
-
     @Test
     void divideWithLogging() {
 
         logger.info("divide " + devideA + " with " + devideB);
 
-        if (b == 0){
+        if (devideB == 0){
             logger.severe("divide by zero!!");
             throw new IllegalArgumentException("divide by zero");
         }
@@ -44,8 +40,6 @@ class CalculatorTest {
         assertEquals(2,result);
 
     }
-
-
 
 
     @Test
