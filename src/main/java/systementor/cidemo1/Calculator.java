@@ -2,7 +2,7 @@ package systementor.cidemo1;
 
 public class Calculator {
 
-
+// fyra räknemetoder: add, subtract, multiply, divide
     public int add(int a, int b) {
         return a + b;
     }
