@@ -14,7 +14,6 @@ class CalculatorTest {
 
     private final int a = 1;
     private final int b = 2;
-
     private final int devideA = 4;
     private final int devideB = 2;
 
@@ -39,7 +38,6 @@ class CalculatorTest {
         assertEquals(2,result);
 
     }
-
 
     @Test
     void addShouldReturn3() {
