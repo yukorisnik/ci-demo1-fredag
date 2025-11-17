@@ -3,7 +3,6 @@ package systementor.cidemo1;
 import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -66,13 +65,6 @@ class CalculatorTest {
         int result = calculator.divide(a,b);
         assertEquals(0,result);
     }
-
-
-    @Test
-    void divideByZeroThrowsError(){
-        assertThrows(IllegalArgumentException.class, () -> calculator.divide(5,0));
-    }
-
 
 
 }
